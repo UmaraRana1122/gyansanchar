@@ -23,7 +23,10 @@ class ImageConstant {
   static String iclocation = 'assets/icons/location.png';
   static String icCalender = 'assets/icons/calender.png';
   static String icSuccess = 'assets/icons/success.png';
-
+  static String icWorld = 'assets/icons/world.png';
+  static String icGraphy = 'assets/icons/graphy.png';
+  static String icMathematics = 'assets/icons/mathmatics.png';
+  static String icBiology = 'assets/icons/biology.png';
 
   static String imgJumpingBoyIllustration =
       'assets/images/jumpingBoyIllustration.png';

@@ -7,38 +7,9 @@ import 'package:intl/intl.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/widgets/custom_image_view.dart';
 import 'package:gyansanchar/theme/app_style.dart';
-import 'package:velocity_x/velocity_x.dart';
 
 class ScheduleScreen extends StatelessWidget {
   final ScheduleController controller = Get.put(ScheduleController());
-
-  Widget _buildBottomNavigationBarItem(int index, String iconPath) {
-    return InkWell(
-      onTap: () => controller.onItemTapped(index),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          CustomImageView(
-            imagePath: iconPath,
-            height: 20.h,
-            color: controller.selectedIndex == index
-                ? Color(0xffEBB12B)
-                : Color(0xff4B4B4B),
-          ),
-          SizedBox(height: 4.0),
-          Text(
-            controller.titles[index],
-            style: TextStyle(
-              color: controller.selectedIndex == index
-                  ? Color(0xffEBB12B)
-                  : Color(0xff4B4B4B),
-              fontSize: 10.0.sp,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -87,13 +58,12 @@ class ScheduleScreen extends StatelessWidget {
                       ),
                       Spacer(),
                       Container(
-                        height: 40.h,
-                        width: 90.w,
                         decoration: BoxDecoration(
                           color: Color(0xfffdf8e9),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
                           child: Text(
                             "Today",
                             style: AppStyle.poppinsyellow,
@@ -195,26 +165,38 @@ class ScheduleScreen extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              SizedBox(width: 15),
+                              SizedBox(
+                                width: 5.w,
+                              ),
+                              SizedBox(
+                                height: 335.h,
+                                child: VerticalDivider(
+                                  color: Colors.black,
+                                  thickness: 0.5,
+                                  indent: 5,
+                                  endIndent: 0,
+                                  width: 20,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 5.w,
+                              ),
                               Column(
                                 children: [
                                   buildSelectableContainer(
                                     index: 0,
-                                    isSelected: controller.selectedIndex1 == 0,
                                   ),
                                   SizedBox(
                                     height: 5.h,
                                   ),
                                   buildSelectableContainer(
                                     index: 1,
-                                    isSelected: controller.selectedIndex1 == 1,
                                   ),
                                   SizedBox(
                                     height: 5.h,
                                   ),
                                   buildSelectableContainer(
                                     index: 2,
-                                    isSelected: controller.selectedIndex1 == 2,
                                   ),
                                 ],
                               ),
@@ -284,29 +266,20 @@ class ScheduleScreen extends StatelessWidget {
     );
   }
 
-  Widget buildSelectableContainer(
-      {required int index, required bool isSelected}) {
-    List<String> courseNames = ["Mathematics", "Biology", "Geography"];
-    List<String> courseDetails = [
-      "Chapter 1: Introduction",
-      "Chapter 3: Animal Kingdom",
-      "Chapter 2: Economy USA"
-    ];
-    List<String> courseModes = ["Online Mode", "Online Mode", "Online Mode"];
-    List<String> teachers = [
-      "Brooklyn Williamson",
-      "Julie Watson",
-      "Jenny Alexander"
-    ];
+  Widget buildSelectableContainer({required int index}) {
+    bool isSelected = index == controller.selectedCourseIndex;
+    Color containerColor = isSelected ? Colors.white : Color(0xffEBB12B);
+    Color textColor = isSelected ? Colors.black : Colors.white;
 
-    return InkWell(
+    return GestureDetector(
       onTap: () {
-        controller.selectedIndex1 = index;
+        controller.selectedCourseIndex = index;
+        Get.forceAppUpdate();
       },
       child: Container(
-        width: 267.w,
+        width: 255.w,
         decoration: BoxDecoration(
-          color: isSelected ? Color(0xffEBB12B) : Color(0xff4B4B4B),
+          color: containerColor,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
@@ -318,8 +291,12 @@ class ScheduleScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    courseNames[index],
-                    style: AppStyle.poppinswhite13,
+                    controller.courseNames[index],
+                    style: TextStyle(
+                      color: textColor,
+                      fontSize: 13.0.sp,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   CustomImageView(
                     imagePath: ImageConstant.icDots,
@@ -329,8 +306,11 @@ class ScheduleScreen extends StatelessWidget {
               ),
               SizedBox(height: 5.h),
               Text(
-                courseDetails[index],
-                style: AppStyle.poppinswhite131,
+                controller.courseDetails[index],
+                style: TextStyle(
+                  color: textColor,
+                  fontSize: 13.0.sp,
+                ),
               ),
               SizedBox(height: 7.h),
               Row(
@@ -341,8 +321,11 @@ class ScheduleScreen extends StatelessWidget {
                   ),
                   SizedBox(width: 7.w),
                   Text(
-                    courseModes[index],
-                    style: AppStyle.poppinswhite111,
+                    controller.courseModes[index],
+                    style: TextStyle(
+                      color: textColor,
+                      fontSize: 11.0.sp,
+                    ),
                   ),
                 ],
               ),
@@ -355,14 +338,45 @@ class ScheduleScreen extends StatelessWidget {
                   ),
                   SizedBox(width: 7.w),
                   Text(
-                    teachers[index],
-                    style: AppStyle.poppinswhite111,
+                    controller.teachers[index],
+                    style: TextStyle(
+                      color: textColor,
+                      fontSize: 11.0.sp,
+                    ),
                   ),
                 ],
               ),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildBottomNavigationBarItem(int index, String iconPath) {
+    return InkWell(
+      onTap: () => controller.onItemTapped(index),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          CustomImageView(
+            imagePath: iconPath,
+            height: 20.h,
+            color: controller.selectedIndex == index
+                ? Color(0xffEBB12B)
+                : Color(0xff4B4B4B),
+          ),
+          SizedBox(height: 4.0),
+          Text(
+            controller.titles[index],
+            style: TextStyle(
+              color: controller.selectedIndex == index
+                  ? Color(0xffEBB12B)
+                  : Color(0xff4B4B4B),
+              fontSize: 10.0.sp,
+            ),
+          ),
+        ],
       ),
     );
   }
