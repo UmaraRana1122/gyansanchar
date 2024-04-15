@@ -2,6 +2,8 @@ import 'package:flutter/scheduler.dart';
 import 'package:get/get.dart';
 import 'package:gyansanchar/presentation/assignment/assignment_screen.dart';
 import 'package:gyansanchar/presentation/assignment/binding/assignment_binding.dart';
+import 'package:gyansanchar/presentation/course/binding/course_binding.dart';
+import 'package:gyansanchar/presentation/course/course_screen.dart';
 import 'package:gyansanchar/presentation/home_screen/binding/home_binding.dart';
 import 'package:gyansanchar/presentation/home_screen/home_screen.dart';
 import 'package:gyansanchar/presentation/schedule/binding/schedule_binding.dart';
@@ -31,9 +33,9 @@ class AppRoutes {
   static List<GetPage> pages = [
     GetPage(
       name: initialRoute,
-      page: () => HomeScreen(),
+      page: () => CourseScreen(),
       bindings: [
-        HomeBinding(),
+        CourseBinding(),
       ],
     ),
 

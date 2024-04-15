@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/widgets/custom_image_view.dart';
 import 'package:gyansanchar/theme/app_style.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class ScheduleScreen extends StatelessWidget {
   final ScheduleController controller = Get.put(ScheduleController());
@@ -268,8 +269,8 @@ class ScheduleScreen extends StatelessWidget {
 
   Widget buildSelectableContainer({required int index}) {
     bool isSelected = index == controller.selectedCourseIndex;
-    Color containerColor = isSelected ? Colors.white : Color(0xffEBB12B);
-    Color textColor = isSelected ? Colors.black : Colors.white;
+    Color containerColor = isSelected ? Color(0xffEBB12B) : Colors.white;
+    Color textColor = isSelected ? Colors.white : Colors.black;
 
     return GestureDetector(
       onTap: () {

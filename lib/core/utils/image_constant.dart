@@ -27,6 +27,14 @@ class ImageConstant {
   static String icGraphy = 'assets/icons/graphy.png';
   static String icMathematics = 'assets/icons/mathmatics.png';
   static String icBiology = 'assets/icons/biology.png';
+  static String icBack = 'assets/icons/back.svg';
+  static String icAtom = 'assets/icons/atom.svg';
+  static String icBook = 'assets/icons/book.svg';
+  static String icBlood = 'assets/icons/blood.svg';
+  static String icTube = 'assets/icons/tube.svg';
+
+
+
 
   static String imgJumpingBoyIllustration =
       'assets/images/jumpingBoyIllustration.png';

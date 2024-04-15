@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
 
-class ScheduleController extends GetxController {
+class PhyAssignmentController extends GetxController {
   int selectedIndex = 0;
-int selectedCourseIndex = 0; 
+  int selectedCourseIndex = 0;
   DateTime? selectedDate;
 
   List<String> titles = ["Home", "My Course", "Blog", "Profile"];
@@ -16,7 +16,8 @@ int selectedCourseIndex = 0;
     selectedDate = date;
     update();
   }
-    List<String> courseNames = ["Mathematics", "Biology", "Geography"];
+
+  List<String> courseNames = ["Mathematics", "Biology", "Geography"];
   List<String> courseDetails = [
     "Chapter 1: Introduction",
     "Chapter 3: Animal Kingdom",
@@ -28,5 +29,4 @@ int selectedCourseIndex = 0;
     "Julie Watson",
     "Jenny Alexander"
   ];
-  
 }

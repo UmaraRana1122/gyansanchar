@@ -199,4 +199,134 @@ class AppStyle {
     fontWeight: FontWeight.w600,
     fontFamily: 'Roboto',
   );
+  static TextStyle dmYellow1600 = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'DM Sans',
+  );
+  static TextStyle ralewaywhite11 = TextStyle(
+    color: ColorConstant.white,
+    height: 0,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewaywhite1 = TextStyle(
+    color: ColorConstant.white,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayblack11 = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayblack1 = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayyellow1 = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayblack111 = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayblack1111 = TextStyle(
+      color: ColorConstant.black22,
+      height: 0,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Raleway',
+      decoration: TextDecoration.underline);
+  static TextStyle ralewaywhite1111 = TextStyle(
+    color: ColorConstant.white,
+    height: 0,
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewaywhite111 = TextStyle(
+    color: ColorConstant.white,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayblackk1 = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayblackk11 = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayyellow111 = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayellow111 = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewablack111 = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayellow11 = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+    decoration: TextDecoration.underline,
+    decorationColor: ColorConstant.yellow1,
+  );
+   static TextStyle ralewayblackk = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewaywhitee = TextStyle(
+    color: ColorConstant.white,
+    height: 0,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+    decoration: TextDecoration.underline,
+    decorationColor: ColorConstant.white,
+  );
 }
