@@ -93,7 +93,7 @@ class ScheduleScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.all(6.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -170,7 +170,7 @@ class ScheduleScreen extends StatelessWidget {
                                 width: 5.w,
                               ),
                               SizedBox(
-                                height: 335.h,
+                                height: 396.h,
                                 child: VerticalDivider(
                                   color: Colors.black,
                                   thickness: 0.5,

@@ -65,9 +65,6 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                                     "Physics 211",
                                     style: AppStyle.ralewaywhite11,
                                   ),
-                                  SizedBox(
-                                    height: 5.h,
-                                  ),
                                   Text(
                                     "Prof.  Andrew Grey",
                                     style: AppStyle.ralewaywhite1,
@@ -80,6 +77,9 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                                 height: 40.h,
                               ),
                             ],
+                          ),
+                          SizedBox(
+                            height: 3.h,
                           ),
                           Row(
                             children: [
@@ -132,10 +132,10 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Assignment due on the 21st of April at 11:59 pm",
-                            style: AppStyle.ralewaywhite1,
+                            style: AppStyle.ralewaywhite21,
                           ),
                           SizedBox(
-                            height: 5.h,
+                            height: 3.h,
                           ),
                           Container(
                             margin: EdgeInsets.symmetric(vertical: 20),

@@ -76,7 +76,8 @@ class ColorConstant {
   static const white11 = Color(0xffffffff);
   static const black22 = Color(0xff000000);
   static const grey2 = Color(0xFF8A8A8A);
-
+  static const green = Color(0xFF29CC7A);
+  static const red = Color(0xffE30016);
 
   static const darkBlue = Color(0xFF292930);
   static const greyblue = Color(0xFF7D94A0);

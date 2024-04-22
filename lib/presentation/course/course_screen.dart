@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/presentation/attendence/attendence.dart';
 import 'package:gyansanchar/presentation/course/controller/course_controller.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/physics_assignment/physics_assignment.dart';
@@ -314,9 +316,14 @@ class CourseScreen extends StatelessWidget {
                         style: AppStyle.ralewayblack111,
                       ),
                       Spacer(),
-                      Text(
-                        "see more",
-                        style: AppStyle.ralewayblack1111,
+                      GestureDetector(
+                        onTap: () {
+                          Get.to(AttendanceScreen());
+                        },
+                        child: Text(
+                          "see more",
+                          style: AppStyle.ralewayblack1111,
+                        ),
                       ),
                     ],
                   ),
@@ -344,7 +351,7 @@ class CourseScreen extends StatelessWidget {
                         color: backgroundColor,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 20),
+                              horizontal: 15, vertical: 15),
                           child: data,
                         ),
                       );

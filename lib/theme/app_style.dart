@@ -313,7 +313,7 @@ class AppStyle {
     decoration: TextDecoration.underline,
     decorationColor: ColorConstant.yellow1,
   );
-   static TextStyle ralewayblackk = TextStyle(
+  static TextStyle ralewayblackk = TextStyle(
     color: ColorConstant.black22,
     height: 0,
     fontSize: 12.sp,
@@ -328,5 +328,61 @@ class AppStyle {
     fontFamily: 'Raleway',
     decoration: TextDecoration.underline,
     decorationColor: ColorConstant.white,
+  );
+  static TextStyle ralewaywhite21 = TextStyle(
+    color: ColorConstant.white,
+    height: 0,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewayyellow13 = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle ralewablack = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Raleway',
+  );
+  static TextStyle dmyellow1600 = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'DM Sans',
+  );
+  static TextStyle popinsblack11 = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Poppins',
+  );
+  static TextStyle popinsgreen11 = TextStyle(
+    color: ColorConstant.green,
+    height: 0,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Poppins',
+  );
+  static TextStyle poppinsred = TextStyle(
+    color: ColorConstant.red,
+    height: 0,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Poppins',
+  );
+  static TextStyle dmyelow = TextStyle(
+    color: ColorConstant.yellow1,
+    height: 0,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'DM Sans',
   );
 }
