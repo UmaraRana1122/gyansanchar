@@ -10,7 +10,6 @@ import 'package:intl/intl.dart';
 class AttendanceScreen extends StatelessWidget {
   final AttendanceController controller = Get.put(AttendanceController());
 
-
   @override
   Widget build(BuildContext context) {
     return GetBuilder<AttendanceController>(
@@ -133,135 +132,148 @@ class AttendanceScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          // Generate rows
+                          // Generate rows with blank rows
                           ...List.generate(10, (index) {
-                            return TableRow(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 11,
+                            return [
+                              TableRow(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 11,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          '${index + 1}. Name Student',
+                                          style: AppStyle.popinsblack11,
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text(
-                                        '${index + 1}. Name Student',
-                                        style: AppStyle.popinsblack11,
+                                      InkWell(
+                                        onTap: () {
+                                          controller.updateSelectedStatus(
+                                              index, 'Present');
+                                        },
+                                        child: Text(
+                                          "P",
+                                          style: controller.getSelectedStatus(
+                                                      index) ==
+                                                  'Present'
+                                              ? AppStyle.popinsgreen11
+                                              : AppStyle.popinsblack11,
+                                        ),
+                                      ),
+                                      CustomCheckBox(
+                                        value: controller
+                                                .getSelectedStatus(index) ==
+                                            'Present',
+                                        shouldShowBorder: true,
+                                        borderColor: Colors.grey,
+                                        uncheckedFillColor: Colors.transparent,
+                                        uncheckedIconColor: Colors.transparent,
+                                        checkedIconColor: Colors.white,
+                                        checkedFillColor: ColorConstant.green,
+                                        borderRadius: 4,
+                                        borderWidth: .5,
+                                        checkBoxSize: 18,
+                                        onChanged: (val) {
+                                          if (val) {
+                                            controller.updateSelectedStatus(
+                                                index, 'Present');
+                                          }
+                                        },
+                                      ),
+                                      InkWell(
+                                        onTap: () {
+                                          controller.updateSelectedStatus(
+                                              index, 'Leave');
+                                        },
+                                        child: Text(
+                                          "L",
+                                          style: controller.getSelectedStatus(
+                                                      index) ==
+                                                  'Leave'
+                                              ? AppStyle.poppinsyellow
+                                              : AppStyle.popinsblack11,
+                                        ),
+                                      ),
+                                      CustomCheckBox(
+                                        value: controller
+                                                .getSelectedStatus(index) ==
+                                            'Leave',
+                                        shouldShowBorder: true,
+                                        borderColor: Colors.grey,
+                                        uncheckedFillColor: Colors.transparent,
+                                        uncheckedIconColor: Colors.transparent,
+                                        checkedIconColor: Colors.white,
+                                        checkedFillColor: Colors.yellow,
+                                        borderRadius: 4,
+                                        borderWidth: .5,
+                                        checkBoxSize: 18,
+                                        onChanged: (val) {
+                                          if (val) {
+                                            controller.updateSelectedStatus(
+                                                index, 'Leave');
+                                          }
+                                        },
+                                      ),
+                                      InkWell(
+                                        onTap: () {
+                                          controller.updateSelectedStatus(
+                                              index, 'Absent');
+                                        },
+                                        child: Text(
+                                          "A",
+                                          style: controller.getSelectedStatus(
+                                                      index) ==
+                                                  'Absent'
+                                              ? AppStyle.poppinsred
+                                              : AppStyle.popinsblack11,
+                                        ),
+                                      ),
+                                      CustomCheckBox(
+                                        value: controller
+                                                .getSelectedStatus(index) ==
+                                            'Absent',
+                                        shouldShowBorder: true,
+                                        borderColor: Colors.grey,
+                                        uncheckedFillColor: Colors.transparent,
+                                        uncheckedIconColor: Colors.transparent,
+                                        checkedIconColor: Colors.white,
+                                        checkedFillColor: Colors.red,
+                                        borderRadius: 4,
+                                        borderWidth: .5,
+                                        checkBoxSize: 18,
+                                        onChanged: (val) {
+                                          if (val) {
+                                            controller.updateSelectedStatus(
+                                                index, 'Absent');
+                                          }
+                                        },
                                       ),
                                     ],
                                   ),
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    InkWell(
-                                      onTap: () {
-                                        controller.updateSelectedStatus(
-                                            index, 'Present');
-                                      },
-                                      child: Text(
-                                        "P",
-                                        style: controller
-                                                    .getSelectedStatus(index) ==
-                                                'Present'
-                                            ? AppStyle.popinsgreen11
-                                            : AppStyle.popinsblack11,
-                                      ),
-                                    ),
-                                    CustomCheckBox(
-                                      value:
-                                          controller.getSelectedStatus(index) ==
-                                              'Present',
-                                      shouldShowBorder: true,
-                                      borderColor: Colors.grey,
-                                      uncheckedFillColor: Colors.transparent,
-                                      uncheckedIconColor: Colors.transparent,
-                                      checkedIconColor: Colors.white,
-                                      checkedFillColor: ColorConstant.green,
-                                      borderRadius: 4,
-                                      borderWidth: .5,
-                                      checkBoxSize: 18,
-                                      onChanged: (val) {
-                                        if (val) {
-                                          controller.updateSelectedStatus(
-                                              index, 'Present');
-                                        }
-                                      },
-                                    ),
-                                    InkWell(
-                                      onTap: () {
-                                        controller.updateSelectedStatus(
-                                            index, 'Leave');
-                                      },
-                                      child: Text(
-                                        "L",
-                                        style: controller
-                                                    .getSelectedStatus(index) ==
-                                                'Leave'
-                                            ? AppStyle.poppinsyellow
-                                            : AppStyle.popinsblack11,
-                                      ),
-                                    ),
-                                    CustomCheckBox(
-                                      value:
-                                          controller.getSelectedStatus(index) ==
-                                              'Leave',
-                                      shouldShowBorder: true,
-                                      borderColor: Colors.grey,
-                                      uncheckedFillColor: Colors.transparent,
-                                      uncheckedIconColor: Colors.transparent,
-                                      checkedIconColor: Colors.white,
-                                      checkedFillColor: Colors.yellow,
-                                      borderRadius: 4,
-                                      borderWidth: .5,
-                                      checkBoxSize: 18,
-                                      onChanged: (val) {
-                                        if (val) {
-                                          controller.updateSelectedStatus(
-                                              index, 'Leave');
-                                        }
-                                      },
-                                    ),
-                                    InkWell(
-                                      onTap: () {
-                                        controller.updateSelectedStatus(
-                                            index, 'Absent');
-                                      },
-                                      child: Text(
-                                        "A",
-                                        style: controller
-                                                    .getSelectedStatus(index) ==
-                                                'Absent'
-                                            ? AppStyle.poppinsred
-                                            : AppStyle.popinsblack11,
-                                      ),
-                                    ),
-                                    CustomCheckBox(
-                                      value:
-                                          controller.getSelectedStatus(index) ==
-                                              'Absent',
-                                      shouldShowBorder: true,
-                                      borderColor: Colors.grey,
-                                      uncheckedFillColor: Colors.transparent,
-                                      uncheckedIconColor: Colors.transparent,
-                                      checkedIconColor: Colors.white,
-                                      checkedFillColor: Colors.red,
-                                      borderRadius: 4,
-                                      borderWidth: .5,
-                                      checkBoxSize: 18,
-                                      onChanged: (val) {
-                                        if (val) {
-                                          controller.updateSelectedStatus(
-                                              index, 'Absent');
-                                        }
-                                      },
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            );
-                          }),
+                                ],
+                              ),
+                              // Blank row
+                              TableRow(
+                                children: [
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                ],
+                              ),
+                            ];
+                          }).expand((element) => element),
                         ],
                       ),
                     ),

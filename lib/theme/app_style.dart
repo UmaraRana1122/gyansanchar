@@ -167,8 +167,8 @@ class AppStyle {
   static TextStyle dmwhite3 = TextStyle(
     color: ColorConstant.white11,
     height: 0,
-    fontSize: 20.sp,
-    fontWeight: FontWeight.w700,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
     fontFamily: 'DM Sans',
   );
   static TextStyle poppinsblack3 = TextStyle(
@@ -255,7 +255,6 @@ class AppStyle {
       fontWeight: FontWeight.w400,
       fontFamily: 'Raleway',
       decoration: TextDecoration.underline);
- 
 
   static TextStyle ralewayblackk1 = TextStyle(
     color: ColorConstant.black22,
@@ -371,6 +370,27 @@ class AppStyle {
     height: 0,
     fontSize: 14.sp,
     fontWeight: FontWeight.w700,
+    fontFamily: 'DM Sans',
+  );
+  static TextStyle dmblack = TextStyle(
+    color: ColorConstant.black22,
+    height: 0,
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'DM Sans',
+  );
+  static TextStyle dmblue = TextStyle(
+    color: ColorConstant.darkBlue,
+    height: 0,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'DM Sans',
+  );
+  static TextStyle dmgrey = TextStyle(
+    color: ColorConstant.grey1,
+    height: 0,
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w300,
     fontFamily: 'DM Sans',
   );
 }

@@ -119,54 +119,58 @@ class ScheduleScreen extends StatelessWidget {
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Column(
-                                children: [
-                                  Text(
-                                    "11:35",
-                                    style: AppStyle.poppinsblack13,
-                                  ),
-                                  SizedBox(
-                                    width: 5.w,
-                                  ),
-                                  Text(
-                                    "13:05",
-                                    style: AppStyle.poppinsblack12,
-                                  ),
-                                  SizedBox(
-                                    height: 85.h,
-                                  ),
-                                  Text(
-                                    "13:15",
-                                    style: AppStyle.poppinsblack13,
-                                  ),
-                                  SizedBox(
-                                    width: 5.w,
-                                  ),
-                                  Text(
-                                    "14:45",
-                                    style: AppStyle.poppinsblack12,
-                                  ),
-                                  SizedBox(
-                                    height: 85.h,
-                                  ),
-                                  Text(
-                                    "15:10",
-                                    style: AppStyle.poppinsblack13,
-                                  ),
-                                  SizedBox(
-                                    width: 5.w,
-                                  ),
-                                  Text(
-                                    "16:40",
-                                    style: AppStyle.poppinsblack12,
-                                  ),
-                                ],
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 8),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "11:35",
+                                      style: AppStyle.poppinsblack13,
+                                    ),
+                                    SizedBox(
+                                      height: 5.h,
+                                    ),
+                                    Text(
+                                      "13:05",
+                                      style: AppStyle.poppinsblack12,
+                                    ),
+                                    SizedBox(
+                                      height: 100.h,
+                                    ),
+                                    Text(
+                                      "13:15",
+                                      style: AppStyle.poppinsblack13,
+                                    ),
+                                    SizedBox(
+                                      width: 5.w,
+                                    ),
+                                    Text(
+                                      "14:45",
+                                      style: AppStyle.poppinsblack12,
+                                    ),
+                                    SizedBox(
+                                      height: 110.h,
+                                    ),
+                                    Text(
+                                      "15:10",
+                                      style: AppStyle.poppinsblack13,
+                                    ),
+                                    SizedBox(
+                                      width: 5.w,
+                                    ),
+                                    Text(
+                                      "16:40",
+                                      style: AppStyle.poppinsblack12,
+                                    ),
+                                  ],
+                                ),
                               ),
                               SizedBox(
                                 width: 5.w,
                               ),
                               SizedBox(
-                                height: 396.h,
+                                height: 410.h,
                                 child: VerticalDivider(
                                   color: Colors.black,
                                   thickness: 0.5,
@@ -275,79 +279,82 @@ class ScheduleScreen extends StatelessWidget {
         controller.selectedCourseIndex = index;
         Get.forceAppUpdate();
       },
-      child: Container(
-        width: 255.w,
-        decoration: BoxDecoration(
-          color: containerColor,
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    controller.courseNames[index],
-                    style: TextStyle(
-                      color: textColor,
-                      fontSize: 13.0.sp,
-                      fontWeight: FontWeight.bold,
+      child: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: Container(
+          width: 255.w,
+          decoration: BoxDecoration(
+            color: containerColor,
+            borderRadius: BorderRadius.circular(15),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      controller.courseNames[index],
+                      style: TextStyle(
+                        color: textColor,
+                        fontSize: 13.0.sp,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  CustomImageView(
-                    imagePath: ImageConstant.icDots,
-                    height: 20.h,
-                    color: dotColor,
-                  ),
-                ],
-              ),
-              SizedBox(height: 5.h),
-              Text(
-                controller.courseDetails[index],
-                style: TextStyle(
-                  color: textColor,
-                  fontSize: 13.0.sp,
+                    CustomImageView(
+                      imagePath: ImageConstant.icDots,
+                      height: 20.h,
+                      color: dotColor,
+                    ),
+                  ],
                 ),
-              ),
-              SizedBox(height: 7.h),
-              Row(
-                children: [
-                  CustomImageView(
-                    imagePath: ImageConstant.iclocation,
-                    height: 13.h,
-                    color: iconColor,
+                SizedBox(height: 5.h),
+                Text(
+                  controller.courseDetails[index],
+                  style: TextStyle(
+                    color: textColor,
+                    fontSize: 13.0.sp,
                   ),
-                  SizedBox(width: 7.w),
-                  Text(
-                    controller.courseModes[index],
-                    style: TextStyle(
-                      color: textColor,
-                      fontSize: 11.0.sp,
+                ),
+                SizedBox(height: 7.h),
+                Row(
+                  children: [
+                    CustomImageView(
+                      imagePath: ImageConstant.iclocation,
+                      height: 13.h,
+                      color: iconColor,
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 7.h),
-              Row(
-                children: [
-                  CustomImageView(
-                    imagePath: ImageConstant.icBrooklyn,
-                    height: 13.h,
-                  ),
-                  SizedBox(width: 7.w),
-                  Text(
-                    controller.teachers[index],
-                    style: TextStyle(
-                      color: textColor,
-                      fontSize: 11.0.sp,
+                    SizedBox(width: 7.w),
+                    Text(
+                      controller.courseModes[index],
+                      style: TextStyle(
+                        color: textColor,
+                        fontSize: 11.0.sp,
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                  ],
+                ),
+                SizedBox(height: 7.h),
+                Row(
+                  children: [
+                    CustomImageView(
+                      imagePath: ImageConstant.icBrooklyn,
+                      height: 13.h,
+                    ),
+                    SizedBox(width: 7.w),
+                    Text(
+                      controller.teachers[index],
+                      style: TextStyle(
+                        color: textColor,
+                        fontSize: 11.0.sp,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

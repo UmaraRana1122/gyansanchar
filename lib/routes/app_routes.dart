@@ -9,6 +9,8 @@ import 'package:gyansanchar/presentation/home_screen/binding/home_binding.dart';
 import 'package:gyansanchar/presentation/home_screen/home_screen.dart';
 import 'package:gyansanchar/presentation/schedule/binding/schedule_binding.dart';
 import 'package:gyansanchar/presentation/schedule/schedule_screen.dart';
+import 'package:gyansanchar/presentation/syllabus/binding/syllabus_binding.dart';
+import 'package:gyansanchar/presentation/syllabus/syllabus_screen.dart';
 
 class AppRoutes {
   static const String homeScreen = '/homeScreen';
@@ -34,7 +36,7 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: initialRoute,
+      name: onBoardingScreen,
       page: () => ScheduleScreen(),
       bindings: [
         ScheduleBinding(),
@@ -48,10 +50,17 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: attendanceScreen,
+      name: onBoardingScreen,
       page: () => AttendanceScreen(),
       bindings: [
         AttendanceBinding(),
+      ],
+    ),
+    GetPage(
+      name: initialRoute,
+      page: () => SyllabusScreen(),
+      bindings: [
+        SyllabusBinding(),
       ],
     )
   ];
