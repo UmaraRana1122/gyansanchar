@@ -1,13 +1,9 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:gyansanchar/core/app_export.dart';
 import 'package:gyansanchar/presentation/schedule/controller/schedule_screen_controller.dart';
 import 'package:intl/intl.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/widgets/custom_image_view.dart';
 import 'package:gyansanchar/theme/app_style.dart';
-import 'package:velocity_x/velocity_x.dart';
 
 class ScheduleScreen extends StatelessWidget {
   final ScheduleController controller = Get.put(ScheduleController());
@@ -38,7 +34,7 @@ class ScheduleScreen extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "24",
+                        "23",
                         style: AppStyle.poppinsblack1,
                       ),
                       SizedBox(
@@ -48,11 +44,11 @@ class ScheduleScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Wed",
+                            "Tue",
                             style: AppStyle.poppinsgrey1,
                           ),
                           Text(
-                            "Jan 2020",
+                            "Apr 2024",
                             style: AppStyle.poppinsgrey1,
                           ),
                         ],
@@ -271,6 +267,8 @@ class ScheduleScreen extends StatelessWidget {
     bool isSelected = index == controller.selectedCourseIndex;
     Color containerColor = isSelected ? Color(0xffEBB12B) : Colors.white;
     Color textColor = isSelected ? Colors.white : Colors.black;
+    Color dotColor = isSelected ? Colors.white : Colors.black;
+    Color iconColor = isSelected ? Colors.white : Colors.black;
 
     return GestureDetector(
       onTap: () {
@@ -302,6 +300,7 @@ class ScheduleScreen extends StatelessWidget {
                   CustomImageView(
                     imagePath: ImageConstant.icDots,
                     height: 20.h,
+                    color: dotColor,
                   ),
                 ],
               ),
@@ -319,6 +318,7 @@ class ScheduleScreen extends StatelessWidget {
                   CustomImageView(
                     imagePath: ImageConstant.iclocation,
                     height: 13.h,
+                    color: iconColor,
                   ),
                   SizedBox(width: 7.w),
                   Text(

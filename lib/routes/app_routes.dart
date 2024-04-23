@@ -20,7 +20,7 @@ class AppRoutes {
 
   static List<GetPage> pages = [
     GetPage(
-      name: initialRoute,
+      name: onBoardingScreen,
       page: () => HomeScreen(),
       bindings: [
         HomeBinding(),
@@ -34,7 +34,7 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: scheduleScreen,
+      name: initialRoute,
       page: () => ScheduleScreen(),
       bindings: [
         ScheduleBinding(),

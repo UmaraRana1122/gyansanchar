@@ -333,6 +333,7 @@ class CourseScreen extends StatelessWidget {
                   GridView.builder(
                     shrinkWrap: true,
                     itemCount: 6,
+                    physics: NeverScrollableScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 12.0,

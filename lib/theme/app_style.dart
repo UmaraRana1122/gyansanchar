@@ -6,36 +6,36 @@ class AppStyle {
   static TextStyle roboto24Yellow1600 = TextStyle(
     color: ColorConstant.yellow1,
     height: 0,
-    fontSize: 17.sp,
+    fontSize: 15.sp,
     fontWeight: FontWeight.w600,
     fontFamily: 'Roboto',
   );
   static TextStyle roboto15BlueGreyOne400 = TextStyle(
     color: ColorConstant.blueGreyOne,
     height: 0,
-    fontSize: 15.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Roboto',
   );
   static TextStyle dm15Blue = TextStyle(
     color: ColorConstant.darkBlue,
     height: 0,
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w700,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
     fontFamily: 'DM Sans',
   );
   static TextStyle dm12Blue = TextStyle(
     color: ColorConstant.grey1,
     height: 0,
-    fontSize: 12.sp,
-    fontWeight: FontWeight.w400,
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w300,
     fontFamily: 'DM Sans',
   );
   static TextStyle poppins14Greyblue400 = TextStyle(
     color: ColorConstant.greyblue,
     height: 0,
-    fontSize: 11.sp,
-    fontWeight: FontWeight.w500,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w400,
     fontFamily: 'Poppins',
   );
   static TextStyle poppins14White500 = TextStyle(
@@ -69,42 +69,42 @@ class AppStyle {
   static TextStyle robotodark1 = TextStyle(
     color: ColorConstant.dark,
     height: 0,
-    fontSize: 15.sp,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w500,
     fontFamily: 'roboto',
   );
   static TextStyle ralewaywhite = TextStyle(
     color: ColorConstant.white11,
     height: 0,
-    fontSize: 16.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Raleway',
   );
   static TextStyle ralewayblack = TextStyle(
     color: ColorConstant.black22,
     height: 0,
-    fontSize: 16.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Raleway',
   );
   static TextStyle poppinsblack1 = TextStyle(
     color: ColorConstant.black22,
     height: 0,
-    fontSize: 44.sp,
+    fontSize: 39.sp,
     fontWeight: FontWeight.w500,
     fontFamily: 'Poppins',
   );
   static TextStyle poppinsgrey1 = TextStyle(
     color: ColorConstant.grey11,
     height: 0,
-    fontSize: 13.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w500,
     fontFamily: 'Poppins',
   );
   static TextStyle poppinsyellow = TextStyle(
     color: ColorConstant.yellow1,
     height: 0,
-    fontSize: 14.sp,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w600,
     fontFamily: 'Poppins',
   );
@@ -118,14 +118,14 @@ class AppStyle {
   static TextStyle poppinsblack12 = TextStyle(
     color: ColorConstant.grey2,
     height: 0,
-    fontSize: 14.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w500,
     fontFamily: 'Poppins',
   );
   static TextStyle poppinsblack13 = TextStyle(
     color: ColorConstant.poppinsblack1,
     height: 0,
-    fontSize: 16.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w500,
     fontFamily: 'Poppins',
   );
@@ -188,49 +188,49 @@ class AppStyle {
   static TextStyle robotoblack = TextStyle(
     color: ColorConstant.black22,
     height: 0,
-    fontSize: 13.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Roboto',
   );
   static TextStyle robotowhite3 = TextStyle(
     color: ColorConstant.white,
     height: 0,
-    fontSize: 10.sp,
+    fontSize: 9.sp,
     fontWeight: FontWeight.w600,
     fontFamily: 'Roboto',
   );
   static TextStyle dmYellow1600 = TextStyle(
     color: ColorConstant.yellow1,
     height: 0,
-    fontSize: 19.sp,
+    fontSize: 17.sp,
     fontWeight: FontWeight.w700,
     fontFamily: 'DM Sans',
   );
   static TextStyle ralewaywhite11 = TextStyle(
     color: ColorConstant.white,
     height: 0,
-    fontSize: 16.sp,
+    fontSize: 15.sp,
     fontWeight: FontWeight.w600,
     fontFamily: 'Raleway',
   );
   static TextStyle ralewaywhite1 = TextStyle(
     color: ColorConstant.white,
     height: 0,
-    fontSize: 12.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Raleway',
   );
   static TextStyle ralewayblack11 = TextStyle(
     color: ColorConstant.black22,
     height: 0,
-    fontSize: 16.sp,
+    fontSize: 15.sp,
     fontWeight: FontWeight.w600,
     fontFamily: 'Raleway',
   );
   static TextStyle ralewayblack1 = TextStyle(
     color: ColorConstant.black22,
     height: 0,
-    fontSize: 12.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w400,
     fontFamily: 'Raleway',
   );
@@ -244,7 +244,7 @@ class AppStyle {
   static TextStyle ralewayblack111 = TextStyle(
     color: ColorConstant.black22,
     height: 0,
-    fontSize: 17.sp,
+    fontSize: 15.sp,
     fontWeight: FontWeight.w500,
     fontFamily: 'Raleway',
   );
@@ -255,20 +255,8 @@ class AppStyle {
       fontWeight: FontWeight.w400,
       fontFamily: 'Raleway',
       decoration: TextDecoration.underline);
-  static TextStyle ralewaywhite1111 = TextStyle(
-    color: ColorConstant.white,
-    height: 0,
-    fontSize: 15.sp,
-    fontWeight: FontWeight.w600,
-    fontFamily: 'Raleway',
-  );
-  static TextStyle ralewaywhite111 = TextStyle(
-    color: ColorConstant.white,
-    height: 0,
-    fontSize: 12.sp,
-    fontWeight: FontWeight.w400,
-    fontFamily: 'Raleway',
-  );
+ 
+
   static TextStyle ralewayblackk1 = TextStyle(
     color: ColorConstant.black22,
     height: 0,
