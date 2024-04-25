@@ -179,4 +179,5 @@ class Constants{
  static const String strOnline100Percent = "100% Online";
  static const String strStartInstantlyAndLearn =
     "Start instantly and learn in you own schedule";
+    static const double factor = 1;
 }

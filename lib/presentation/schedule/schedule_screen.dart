@@ -1,4 +1,5 @@
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/core/constant/constants.dart';
 import 'package:gyansanchar/presentation/schedule/controller/schedule_screen_controller.dart';
 import 'package:intl/intl.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
@@ -35,6 +36,8 @@ class ScheduleScreen extends StatelessWidget {
                     children: [
                       Text(
                         "23",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                         style: AppStyle.poppinsblack1,
                       ),
                       SizedBox(
@@ -45,10 +48,14 @@ class ScheduleScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Tue",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.poppinsgrey1,
                           ),
                           Text(
                             "Apr 2024",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.poppinsgrey1,
                           ),
                         ],
@@ -63,6 +70,8 @@ class ScheduleScreen extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
                             "Today",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.poppinsyellow,
                           ),
                         ),
@@ -97,6 +106,8 @@ class ScheduleScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Time",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                                 style: AppStyle.poppinsblack11,
                               ),
                               SizedBox(
@@ -104,6 +115,8 @@ class ScheduleScreen extends StatelessWidget {
                               ),
                               Text(
                                 "Course",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                                 style: AppStyle.poppinsblack11,
                               ),
                               Spacer(),
@@ -126,6 +139,9 @@ class ScheduleScreen extends StatelessWidget {
                                   children: [
                                     Text(
                                       "11:35",
+          textScaler: const TextScaler.linear(
+                                          Constants.factor),
+
                                       style: AppStyle.poppinsblack13,
                                     ),
                                     SizedBox(
@@ -133,6 +149,9 @@ class ScheduleScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "13:05",
+          textScaler: const TextScaler.linear(
+                                          Constants.factor),
+
                                       style: AppStyle.poppinsblack12,
                                     ),
                                     SizedBox(
@@ -140,6 +159,9 @@ class ScheduleScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "13:15",
+          textScaler: const TextScaler.linear(
+                                          Constants.factor),
+
                                       style: AppStyle.poppinsblack13,
                                     ),
                                     SizedBox(
@@ -147,6 +169,9 @@ class ScheduleScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "14:45",
+          textScaler: const TextScaler.linear(
+                                          Constants.factor),
+
                                       style: AppStyle.poppinsblack12,
                                     ),
                                     SizedBox(
@@ -154,6 +179,9 @@ class ScheduleScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "15:10",
+          textScaler: const TextScaler.linear(
+                                          Constants.factor),
+
                                       style: AppStyle.poppinsblack13,
                                     ),
                                     SizedBox(
@@ -161,6 +189,9 @@ class ScheduleScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "16:40",
+          textScaler: const TextScaler.linear(
+                                          Constants.factor),
+
                                       style: AppStyle.poppinsblack12,
                                     ),
                                   ],
@@ -246,6 +277,8 @@ class ScheduleScreen extends StatelessWidget {
           children: [
             Text(
               DateFormat('E').format(date),
+          textScaler: const TextScaler.linear(Constants.factor),
+
               style: TextStyle(
                 color: isSelected ? Color(0xffffffff) : Color(0xffBCC1CD),
                 fontWeight: FontWeight.bold,
@@ -255,6 +288,8 @@ class ScheduleScreen extends StatelessWidget {
             SizedBox(height: 4.0),
             Text(
               "${date.day}",
+          textScaler: const TextScaler.linear(Constants.factor),
+
               style: TextStyle(
                 color: isSelected ? Color(0xffffffff) : Color(0xff212525),
                 fontWeight: FontWeight.bold,
@@ -297,6 +332,8 @@ class ScheduleScreen extends StatelessWidget {
                   children: [
                     Text(
                       controller.courseNames[index],
+          textScaler: const TextScaler.linear(Constants.factor),
+
                       style: TextStyle(
                         color: textColor,
                         fontSize: 13.0.sp,
@@ -312,6 +349,8 @@ class ScheduleScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 5.h),
                 Text(
+          textScaler: const TextScaler.linear(Constants.factor),
+
                   controller.courseDetails[index],
                   style: TextStyle(
                     color: textColor,
@@ -328,6 +367,8 @@ class ScheduleScreen extends StatelessWidget {
                     ),
                     SizedBox(width: 7.w),
                     Text(
+          textScaler: const TextScaler.linear(Constants.factor),
+
                       controller.courseModes[index],
                       style: TextStyle(
                         color: textColor,
@@ -346,6 +387,8 @@ class ScheduleScreen extends StatelessWidget {
                     SizedBox(width: 7.w),
                     Text(
                       controller.teachers[index],
+          textScaler: const TextScaler.linear(Constants.factor),
+
                       style: TextStyle(
                         color: textColor,
                         fontSize: 11.0.sp,
@@ -377,7 +420,10 @@ class ScheduleScreen extends StatelessWidget {
           SizedBox(height: 4.0),
           Text(
             controller.titles[index],
+          textScaler: const TextScaler.linear(Constants.factor),
+
             style: TextStyle(
+              
               color: controller.selectedIndex == index
                   ? Color(0xffEBB12B)
                   : Color(0xff4B4B4B),

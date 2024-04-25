@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/core/constant/constants.dart';
 import 'package:gyansanchar/presentation/attendence/attendence.dart';
 import 'package:gyansanchar/presentation/course/controller/course_controller.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
@@ -33,6 +34,7 @@ class CourseScreen extends StatelessWidget {
                       ),
                       Text(
                         "Courses",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.dmYellow1600,
                       ),
                     ],
@@ -59,6 +61,8 @@ class CourseScreen extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Physics 211",
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.ralewaywhite11,
                                     ),
                                     SizedBox(
@@ -66,6 +70,8 @@ class CourseScreen extends StatelessWidget {
                                     ),
                                     Text(
                                       "Prof.  Andrew Grey",
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.ralewaywhite1,
                                     ),
                                   ],
@@ -94,11 +100,15 @@ class CourseScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   "Course outline progress",
+                                    textScaler:
+                                      const TextScaler.linear(Constants.factor),
                                   style: AppStyle.ralewaywhite1,
                                 ),
                                 Spacer(),
                                 Text(
                                   "68%",
+                                    textScaler:
+                                      const TextScaler.linear(Constants.factor),
                                   style: AppStyle.ralewaywhite1,
                                 ),
                               ],
@@ -126,6 +136,8 @@ class CourseScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     "NEET 211",
+                                      textScaler: const TextScaler.linear(
+                                        Constants.factor),
                                     style: AppStyle.ralewayblack11,
                                   ),
                                   SizedBox(
@@ -133,6 +145,8 @@ class CourseScreen extends StatelessWidget {
                                   ),
                                   Text(
                                     "Prof.  Andrew Grey",
+                                      textScaler: const TextScaler.linear(
+                                        Constants.factor),
                                     style: AppStyle.ralewayblack1,
                                   ),
                                 ],
@@ -161,11 +175,15 @@ class CourseScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Course outline progress",
+                                  textScaler:
+                                    const TextScaler.linear(Constants.factor),
                                 style: AppStyle.ralewayyellow1,
                               ),
                               Spacer(),
                               Text(
                                 "68%",
+                                  textScaler:
+                                    const TextScaler.linear(Constants.factor),
                                 style: AppStyle.ralewayyellow1,
                               ),
                             ],
@@ -192,6 +210,8 @@ class CourseScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Lil Genius 211",
+                                      textScaler: const TextScaler.linear(
+                                        Constants.factor),
                                     style: AppStyle.ralewaywhite11,
                                   ),
                                   SizedBox(
@@ -199,6 +219,8 @@ class CourseScreen extends StatelessWidget {
                                   ),
                                   Text(
                                     "Prof.  Andrew Grey",
+                                      textScaler: const TextScaler.linear(
+                                        Constants.factor),
                                     style: AppStyle.ralewaywhite1,
                                   ),
                                 ],
@@ -227,11 +249,15 @@ class CourseScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Course outline progress",
+                                  textScaler:
+                                    const TextScaler.linear(Constants.factor),
                                 style: AppStyle.ralewaywhite1,
                               ),
                               Spacer(),
                               Text(
                                 "68%",
+                                  textScaler:
+                                    const TextScaler.linear(Constants.factor),
                                 style: AppStyle.ralewaywhite1,
                               ),
                             ],
@@ -258,6 +284,8 @@ class CourseScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Foundation Batch 211",
+                                      textScaler: const TextScaler.linear(
+                                        Constants.factor),
                                     style: AppStyle.ralewayblack11,
                                   ),
                                   SizedBox(
@@ -265,6 +293,8 @@ class CourseScreen extends StatelessWidget {
                                   ),
                                   Text(
                                     "Prof.  Andrew Grey",
+                                      textScaler: const TextScaler.linear(
+                                        Constants.factor),
                                     style: AppStyle.ralewayblack1,
                                   ),
                                 ],
@@ -293,11 +323,15 @@ class CourseScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Course outline progress",
+                                  textScaler:
+                                    const TextScaler.linear(Constants.factor),
                                 style: AppStyle.ralewayyellow1,
                               ),
                               Spacer(),
                               Text(
                                 "68%",
+                                  textScaler:
+                                    const TextScaler.linear(Constants.factor),
                                 style: AppStyle.ralewayyellow1,
                               ),
                             ],
@@ -313,6 +347,7 @@ class CourseScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Remaining Lectures",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.ralewayblack111,
                       ),
                       Spacer(),
@@ -322,6 +357,7 @@ class CourseScreen extends StatelessWidget {
                         },
                         child: Text(
                           "see more",
+                            textScaler: const TextScaler.linear(Constants.factor),
                           style: AppStyle.ralewayblack1111,
                         ),
                       ),
@@ -366,10 +402,12 @@ class CourseScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Quick Links ",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.roboto24Yellow1600,
                       ),
                       Text(
                         "see more",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.ralewaydark,
                       ),
                     ],
@@ -382,6 +420,7 @@ class CourseScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Course Materials",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.robotodark1,
                       ),
                       CustomImageView(
@@ -398,6 +437,7 @@ class CourseScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Online Textbooks",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.robotodark1,
                       ),
                       CustomImageView(
@@ -414,6 +454,7 @@ class CourseScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Download Class Schedule",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.robotodark1,
                       ),
                       CustomImageView(
@@ -430,6 +471,7 @@ class CourseScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Course Registration",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.robotodark1,
                       ),
                       CustomImageView(

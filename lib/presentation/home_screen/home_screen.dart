@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/core/constant/constants.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/home_screen/controller/home_screen_controller.dart';
 import 'package:gyansanchar/presentation/widgets/custom_image_view.dart';
@@ -71,6 +72,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Text(
                   "Lina Kovalenko",
+                    textScaler: const TextScaler.linear(Constants.factor),
                   style: AppStyle.dm15Blue,
                 ),
                 SizedBox(
@@ -78,6 +80,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Text(
                   "English teacher",
+                    textScaler: const TextScaler.linear(Constants.factor),
                   style: AppStyle.dm12Blue,
                 ),
               ],
@@ -112,6 +115,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Text(
                     "Subjects",
+                      textScaler: const TextScaler.linear(Constants.factor),
                     style: AppStyle.roboto24Yellow1600,
                   ),
                   SizedBox(
@@ -119,6 +123,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Text(
                     "Recommendations for you",
+                      textScaler: const TextScaler.linear(Constants.factor),
                     style: AppStyle.poppins14Greyblue400,
                   ),
                   SizedBox(
@@ -143,6 +148,8 @@ class HomeScreen extends StatelessWidget {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text(
                                       "Mathematics",
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.poppinsblack3,
                                     ),
                                   ),
@@ -190,6 +197,8 @@ class HomeScreen extends StatelessWidget {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text(
                                       "Geography",
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.poppinwhite3,
                                     ),
                                   ),
@@ -238,6 +247,8 @@ class HomeScreen extends StatelessWidget {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text(
                                       "Geography",
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.poppinwhite3,
                                     ),
                                   ),
@@ -276,6 +287,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Text(
                     "Your Schedule",
+                      textScaler: const TextScaler.linear(Constants.factor),
                     style: AppStyle.roboto24Yellow1600,
                   ),
                   SizedBox(
@@ -286,10 +298,12 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Next lessons",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.poppins14Greyblue400,
                       ),
                       Text(
                         "see more",
+                          textScaler: const TextScaler.linear(Constants.factor),
                         style: AppStyle.ralewaydark,
                       ),
                     ],
@@ -316,6 +330,8 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Biology",
+                                    textScaler:
+                                      const TextScaler.linear(Constants.factor),
                                   style: AppStyle.poppinsblack3,
                                 ),
                                 SizedBox(
@@ -323,6 +339,8 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Chapter 3 : Animal Kingdom",
+                                    textScaler:
+                                      const TextScaler.linear(Constants.factor),
                                   style: AppStyle.robotoblack,
                                 ),
                                 SizedBox(
@@ -336,6 +354,8 @@ class HomeScreen extends StatelessWidget {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Text(
                                       "11:25-1:00 pm",
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.robotowhite3,
                                     ),
                                   ),
@@ -370,10 +390,14 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Quick Links ",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.roboto24Yellow1600,
                             ),
                             Text(
                               "see more",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.ralewaydark,
                             ),
                           ],
@@ -386,6 +410,8 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Course Registration",
+                              textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.robotodark1,
                             ),
                             CustomImageView(
@@ -402,6 +428,8 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Test Papers",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.robotodark1,
                             ),
                             CustomImageView(
@@ -418,6 +446,8 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Results",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.robotodark1,
                             ),
                             CustomImageView(
@@ -434,6 +464,8 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Online textbooks",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.robotodark1,
                             ),
                             CustomImageView(

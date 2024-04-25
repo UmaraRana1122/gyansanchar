@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/core/constant/constants.dart';
 import 'package:gyansanchar/presentation/course/controller/course_controller.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/physics_assignment/controller/physics_assignment_controller.dart';
@@ -40,6 +41,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                       ),
                       Text(
                         "Courses",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                         style: AppStyle.dmYellow1600,
                       ),
                     ],
@@ -63,10 +66,16 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Physics 211",
+          textScaler: const TextScaler.linear(
+                                        Constants.factor),
+
                                     style: AppStyle.ralewaywhite11,
                                   ),
                                   Text(
                                     "Prof.  Andrew Grey",
+          textScaler: const TextScaler.linear(
+                                        Constants.factor),
+
                                     style: AppStyle.ralewaywhite1,
                                   ),
                                 ],
@@ -88,6 +97,9 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Assignment",
+          textScaler: const TextScaler.linear(
+                                        Constants.factor),
+
                                     style: AppStyle.ralewaywhite1,
                                   ),
                                   SizedBox(
@@ -95,6 +107,9 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                                   ),
                                   Text(
                                     "2 / 5",
+          textScaler: const TextScaler.linear(
+                                        Constants.factor),
+
                                     style: AppStyle.ralewaywhite1,
                                   ),
                                 ],
@@ -107,6 +122,9 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Group Work",
+          textScaler: const TextScaler.linear(
+                                        Constants.factor),
+
                                     style: AppStyle.ralewaywhite1,
                                   ),
                                   SizedBox(
@@ -114,6 +132,9 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                                   ),
                                   Text(
                                     "2 / 2",
+          textScaler: const TextScaler.linear(
+                                        Constants.factor),
+
                                     style: AppStyle.ralewaywhite1,
                                   ),
                                 ],
@@ -125,6 +146,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Submission-",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewaywhite1,
                           ),
                           SizedBox(
@@ -132,6 +155,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Assignment due on the 21st of April at 11:59 pm",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewaywhite21,
                           ),
                           SizedBox(
@@ -154,11 +179,15 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Course outline progress",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                                 style: AppStyle.ralewaywhite1,
                               ),
                               Spacer(),
                               Text(
                                 "68%",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                                 style: AppStyle.ralewaywhite1,
                               ),
                             ],
@@ -172,6 +201,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                   ),
                   Text(
                     "Assignment",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                     style: AppStyle.ralewayblack111,
                   ),
                   SizedBox(
@@ -188,6 +219,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Details",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewayellow111,
                           ),
                           SizedBox(
@@ -195,6 +228,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Question on Photoelectric effect, Test your understanding with practice problems and answer them carefully.",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewablack111,
                           ),
                           SizedBox(
@@ -202,6 +237,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Submission-",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewayellow111,
                           ),
                           SizedBox(
@@ -209,6 +246,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Assignment due on the 21st of April at 11:59 pm",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewablack111,
                           ),
                           SizedBox(
@@ -218,6 +257,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Assignment",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                                 style: AppStyle.ralewayellow11,
                               ),
                               Spacer(),
@@ -236,6 +277,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                   ),
                   Text(
                     "Group Work",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                     style: AppStyle.ralewayblack111,
                   ),
                   SizedBox(
@@ -252,6 +295,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Details",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewayblackk,
                           ),
                           SizedBox(
@@ -266,6 +311,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Submission-",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewayblackk,
                           ),
                           SizedBox(
@@ -273,6 +320,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "-",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                             style: AppStyle.ralewablack111,
                           ),
                           SizedBox(
@@ -282,6 +331,8 @@ class PhysicsAssignmentScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Add Group Work",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                                 style: AppStyle.ralewaywhitee,
                               ),
                               Spacer(),

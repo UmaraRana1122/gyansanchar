@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/core/constant/constants.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/widgets/custom_image_view.dart';
 import 'package:gyansanchar/theme/app_style.dart';
@@ -32,6 +33,8 @@ class SyllabusScreen extends StatelessWidget {
                     Spacer(),
                     Text(
                       "Syllabus",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                       style: AppStyle.dmblack,
                     ),
                     Spacer(
@@ -51,6 +54,8 @@ class SyllabusScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Lesson 1. Getting to know the \nWebFlow interface",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                         style: AppStyle.dmblue,
                         textAlign: TextAlign.start,
                       ),
@@ -59,6 +64,8 @@ class SyllabusScreen extends StatelessWidget {
                       ),
                       Text(
                         "We study the interface and familiarize \nourselves with the basic functions",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                         style: AppStyle.dmgrey,
                       ),
                     ],
@@ -82,6 +89,8 @@ class SyllabusScreen extends StatelessWidget {
               ),
               Text(
                 "Lesson 2. Block model",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                 style: AppStyle.dmblue,
               ),
               SizedBox(
@@ -89,6 +98,9 @@ class SyllabusScreen extends StatelessWidget {
               ),
               Text(
                 "We study the interface and familiarize \nourselves with the basic functions",
+          textScaler: const TextScaler.linear(Constants.factor),
+
+
                 style: AppStyle.dmgrey,
               ),
               SizedBox(
@@ -96,6 +108,8 @@ class SyllabusScreen extends StatelessWidget {
               ),
               Text(
                 "Lesson 3. Tags, classes, and \nunique elements",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                 style: AppStyle.dmblue,
                 textAlign: TextAlign.start,
               ),
@@ -104,6 +118,8 @@ class SyllabusScreen extends StatelessWidget {
               ),
               Text(
                 "We study the interface and familiarize \nourselves with the basic functions",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                 style: AppStyle.dmgrey,
               ),
               Spacer(),
@@ -121,6 +137,8 @@ class SyllabusScreen extends StatelessWidget {
                     child: Center(
                       child: Text(
                         "Add to Syllabus",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                         style: AppStyle.dmwhite3,
                       ),
                     ),
@@ -166,6 +184,8 @@ class SyllabusScreen extends StatelessWidget {
                 SizedBox(height: 10.h),
                 Text(
                   "Added Successfully",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                   style: TextStyle(
                     color: Color(0xffF0A854),
                     fontWeight: FontWeight.w700,
@@ -175,6 +195,8 @@ class SyllabusScreen extends StatelessWidget {
                 SizedBox(height: 10.h),
                 Text(
                   "Your Syllabus has been Created successfully ",
+          textScaler: const TextScaler.linear(Constants.factor),
+
                   textAlign: TextAlign.center,
                 ),
               ],

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/core/constant/constants.dart';
 import 'package:intl/intl.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/widgets/custom_image_view.dart';
@@ -121,6 +122,7 @@ class AssignmentScreen extends StatelessWidget {
                   SizedBox(height: 10.h),
                   Text(
                     "Assignments",
+                    textScaler: const TextScaler.linear(Constants.factor),
                     style: AppStyle.roboto24Yellow1600,
                   ),
                   SizedBox(height: 20.h),
@@ -130,8 +132,10 @@ class AssignmentScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(25.0),
                       child: Row(
                         children: [
-                          Text(
+                         Text(
                             "Title",
+                            textScaler:
+                                const TextScaler.linear(Constants.factor),
                             style: AppStyle.relewayblack34,
                           ),
                           SizedBox(
@@ -139,6 +143,8 @@ class AssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Tutorial with Lizzy",
+                              textScaler:
+                                const TextScaler.linear(Constants.factor),
                             style: AppStyle.relewayblack3,
                           ),
                         ],
@@ -156,6 +162,8 @@ class AssignmentScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Place",
+                              textScaler:
+                                const TextScaler.linear(Constants.factor),
                             style: AppStyle.relewayblack34,
                           ),
                           SizedBox(
@@ -163,6 +171,8 @@ class AssignmentScreen extends StatelessWidget {
                           ),
                           Text(
                             "Location or video call",
+                              textScaler:
+                                const TextScaler.linear(Constants.factor),
                             style: AppStyle.relewayblack3,
                           ),
                         ],
@@ -193,6 +203,8 @@ class AssignmentScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Date",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.relewayblack34,
                             ),
                             SizedBox(
@@ -203,6 +215,8 @@ class AssignmentScreen extends StatelessWidget {
                                   ? DateFormat('EEEE, d MMMM yyyy')
                                       .format(controller.selectedDate!)
                                   : "Thursday, 30th April 2023",
+                                    textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.relewayblack3,
                             ),
                             Spacer(),
@@ -237,6 +251,8 @@ class AssignmentScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Time",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.relewayblack34,
                             ),
                             SizedBox(
@@ -246,6 +262,8 @@ class AssignmentScreen extends StatelessWidget {
                               controller.selectedTime != null
                                   ? controller.selectedTime!.format(context)
                                   : "Select time",
+                                    textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.relewayblack34,
                             ),
                             Spacer(),
@@ -286,6 +304,8 @@ class AssignmentScreen extends StatelessWidget {
                               controller.repeatTime != null
                                   ? controller.repeatTime!.format(context)
                                   : "Select",
+                                    textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: AppStyle.relewayblack34,
                             ),
                             Spacer(),
@@ -323,13 +343,13 @@ class AssignmentScreen extends StatelessWidget {
                       filled: true,
                       fillColor: Color(0xffFFF7E3),
                       hintText: "Notes",
+                      
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
                       ),
                     ),
                     style: AppStyle.relewayblack3,
                   ),
-                 
                   SizedBox(
                     height: 30.h,
                   ),
@@ -347,6 +367,8 @@ class AssignmentScreen extends StatelessWidget {
                         child: Center(
                           child: Text(
                             "Create",
+                              textScaler:
+                                const TextScaler.linear(Constants.factor),
                             style: AppStyle.dmwhite3,
                           ),
                         ),

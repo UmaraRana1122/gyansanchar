@@ -1,5 +1,6 @@
 import 'package:custom_check_box/custom_check_box.dart';
 import 'package:gyansanchar/core/app_export.dart';
+import 'package:gyansanchar/core/constant/constants.dart';
 import 'package:gyansanchar/core/utils/color_constant.dart';
 import 'package:gyansanchar/core/utils/image_constant.dart';
 import 'package:gyansanchar/presentation/attendence/controller/attendence_controller.dart';
@@ -54,6 +55,7 @@ class AttendanceScreen extends StatelessWidget {
                         ),
                         Text(
                           "Attendance",
+                            textScaler: const TextScaler.linear(Constants.factor),
                           style: AppStyle.dmYellow1600,
                         ),
                       ],
@@ -86,6 +88,8 @@ class AttendanceScreen extends StatelessWidget {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
                                     "Class ${index + 1}",
+                                      textScaler: const TextScaler.linear(
+                                        Constants.factor),
                                     style:
                                         controller.selectedIndex.value == index
                                             ? AppStyle.ralewayyellow13
@@ -114,6 +118,8 @@ class AttendanceScreen extends StatelessWidget {
                                   children: [
                                     Text(
                                       'Student Name',
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.dmyellow1600,
                                     ),
                                   ],
@@ -125,6 +131,8 @@ class AttendanceScreen extends StatelessWidget {
                                   children: [
                                     Text(
                                       'Attendance',
+                                        textScaler: const TextScaler.linear(
+                                          Constants.factor),
                                       style: AppStyle.dmyellow1600,
                                     ),
                                   ],
@@ -147,6 +155,8 @@ class AttendanceScreen extends StatelessWidget {
                                       children: [
                                         Text(
                                           '${index + 1}. Name Student',
+                                            textScaler: const TextScaler.linear(
+                                              Constants.factor),
                                           style: AppStyle.popinsblack11,
                                         ),
                                       ],
@@ -162,6 +172,8 @@ class AttendanceScreen extends StatelessWidget {
                                         },
                                         child: Text(
                                           "P",
+                                            textScaler: const TextScaler.linear(
+                                              Constants.factor),
                                           style: controller.getSelectedStatus(
                                                       index) ==
                                                   'Present'
@@ -196,6 +208,8 @@ class AttendanceScreen extends StatelessWidget {
                                         },
                                         child: Text(
                                           "L",
+                                            textScaler: const TextScaler.linear(
+                                              Constants.factor),
                                           style: controller.getSelectedStatus(
                                                       index) ==
                                                   'Leave'
@@ -230,6 +244,8 @@ class AttendanceScreen extends StatelessWidget {
                                         },
                                         child: Text(
                                           "A",
+                                            textScaler: const TextScaler.linear(
+                                              Constants.factor),
                                           style: controller.getSelectedStatus(
                                                       index) ==
                                                   'Absent'
@@ -335,6 +351,8 @@ class AttendanceScreen extends StatelessWidget {
                                     ? DateFormat('dd/MM/yyyy')
                                         .format(controller.selectedDate.value!)
                                     : 'Select Date',
+                                      textScaler:
+                                    const TextScaler.linear(Constants.factor),
                                 style: TextStyle(fontSize: 10),
                               )),
                           style: ElevatedButton.styleFrom(
@@ -360,6 +378,8 @@ class AttendanceScreen extends StatelessWidget {
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
                               "Submit",
+                                textScaler:
+                                  const TextScaler.linear(Constants.factor),
                               style: TextStyle(
                                   color: ColorConstant.white,
                                   fontSize: 10.5.sp,
